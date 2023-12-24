@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'YourChosenFont';
+    src: url('https://nimtornet.github.io/Digi-X/YekanBakh-Heavy.ttf') format('truetype');
+}
+
+body {
+    font-family: 'YourChosenFont', sans-serif;
+    background-color: #EAEAEA;
+    text-align: center;
+}
+
+#video-player {
+    margin: 0 auto;
+    width: 500px;
+    padding: 20px;
+    background-color: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#video-player video {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.video-link {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.video-link:hover {
+    color: #FF0000;
+}
