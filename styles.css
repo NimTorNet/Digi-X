@@ -1,144 +1,76 @@
-@font-face {
-    font-family: 'YourChosenFont';
-    src: url('https://nimtornet.github.io/Digi-X/YekanBakh-Heavy.ttf') format('truetype');
+:root {
+    --bg: #000000;
+    --color: #ffffff;
+    --font: Montserrat, Roboto, Helvetica, Arial, sans-serif;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+.wrapper {
+    padding: 1.5rem 0;
+    filter: url('#goo');
 }
+
+.button {
+    display: inline-block;
+    text-align: center;
+    background: var(--color);
+    color: var(--bg);
+    font-weight: bold;
+    padding: 1.18em 1.32em 1.03em;
+    line-height: 1;
+    border-radius: 1em;
+    position: relative;
+    min-width: 8.23em;
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 1.25rem;
+}
+
+.button:before,
+.button:after {
+    width: 4.4em;
+    height: 2.95em;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background: var(--color);
+    border-radius: 50%;
+    transition: transform 1s ease;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.button:before {
+    top: -25%;
+    left: 20%;
+}
+
+.button:after {
+    bottom: -25%;
+    right: 20%;
+}
+
+.button:hover:before,
+.button:hover:after {
+    transform: none;
+}
+
+
+/* Demo styles */
 
 body {
-    font-family: 'YourChosenFont', sans-serif;
-    background-color: #000000;
-    text-align: center;
-}
-
-#video-player {
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #FFF;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    border-radius: 10px; /* تنظیم border-radius برای گرد کردن */
-}
-
-#video-player video {
     width: 100%;
-    margin-bottom: 20px;
-    border-radius: 8px; /* گرد کردن گوشه‌های ویدیو */
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg)
 }
-
-.video-link {
-    display: inline-block;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
-.video-link:hover {
-    color: #000000;
-}
-
-/* تنظیمات برای موبایل */
-@media only screen and (max-width: 500px) {
-    #video-player {
-        width: 100%;
-    }
-}
-@font-face {
-    font-family: 'YourChosenFont';
-    src: url('https://nimtornet.github.io/Digi-X/YekanBakh-Heavy.ttf') format('truetype');
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
-body {
-    font-family: 'YourChosenFont', sans-serif;
-    background-color: #000000;
+.wrapper {
     text-align: center;
-}
-
-#video-player {
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #FFF;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    border-radius: 10px; /* تنظیم border-radius برای گرد کردن */
-}
-
-#video-player video {
-    width: 100%;
-    margin-bottom: 20px;
-    border-radius: 8px; /* گرد کردن گوشه‌های ویدیو */
-}
-
-.video-link {
-    display: inline-block;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
-.video-link:hover {
-    color: #000000;
-}
-
-/* تنظیمات برای موبایل */
-@media only screen and (max-width: 500px) {
-    #video-player {
-        width: 100%;
-    }
-}
-@font-face {
-    font-family: 'YourChosenFont';
-    src: url('https://nimtornet.github.io/Digi-X/YekanBakh-Heavy.ttf') format('truetype');
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
-body {
-    font-family: 'YourChosenFont', sans-serif;
-    background-color: #000000;
-    text-align: center;
-}
-
-#video-player {
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #FFF;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    border-radius: 10px; /* تنظیم border-radius برای گرد کردن */
-}
-
-#video-player video {
-    width: 100%;
-    margin-bottom: 20px;
-    border-radius: 8px; /* گرد کردن گوشه‌های ویدیو */
-}
-
-.video-link {
-    display: inline-block;
-    margin-right: 10px;
-    cursor: pointer;
-}
-
-.video-link:hover {
-    color: #000000;
-}
-
-/* تنظیمات برای موبایل */
-@media only screen and (max-width: 500px) {
-    #video-player {
-        width: 100%;
-    }
-}
+  }
+  
+  .button {
+    display: block;
+    margin-bottom: 35px; /* فاصله بین دکمه‌ها */
+  }
